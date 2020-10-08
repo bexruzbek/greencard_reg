@@ -1,0 +1,42 @@
+<div class="row mt-2 mb-5">
+    <div class="col-sm-12">
+        <div class="card">
+          <center><div class="card-header font-weight-bold">
+            Kod: {{registration.yourCode}}
+          </div></center>
+            <ul class="list-group">
+              <center><li class="list-group-item font-weight-bold">Status: <span class="text-danger">{{registration.yourStatus}}</span></li></center>
+              <li class="list-group-item font-weight-bold">Ism: <span class="text-primary">{{registration.name}}</span></li>
+              <li class="list-group-item font-weight-bold">Familiya: <span class="text-primary">{{registration.surname}}</span></li>
+              <li class="list-group-item font-weight-bold">Telefon: <span class="text-primary">{{registration.phone}}</span></li>
+              <li class="list-group-item font-weight-bold">Email: <span class="text-primary">{{registration.email}}</span></li>
+              <li class="list-group-item font-weight-bold">Tug'ilgan kun: <span class="text-primary">{{registration.birthday}}</span></li>
+              <li class="list-group-item font-weight-bold">Adress: <span class="text-primary">{{registration.address}}</span></li>
+              <li class="list-group-item font-weight-bold">Er, Xotin: <span class="text-primary">{{registration.couple}}</span></li>
+              <li class="list-group-item font-weight-bold">Farzandlari soni: <span class="text-primary">{{registration.childrenCount}}</span></li>
+              <li class="list-group-item font-weight-bold">Farzandlari haqida: <span class="text-primary">{{registration.children}}</span></li>
+              <li class="list-group-item font-weight-bold">Jinsi: <span class="text-primary">{{registration.sex}}</span></li>
+              <li class="list-group-item font-weight-bold">Tug'ilgan davlati: <span class="text-primary">{{registration.country}}</span></li>
+              <li class="list-group-item font-weight-bold">Ma'lumoti: <span class="text-primary">{{registration.education}}</span></li>
+              <li class="list-group-item font-weight-bold">Oilaviy holati: <span class="text-primary">{{registration.familystatus}}</span></li>
+              <li class="list-group-item font-weight-bold">Foto: <a href="{{url}}/{{registration.photo}}" target="_blank">{{registration.photo}}</a></li>
+              <li class="list-group-item font-weight-bold">Passport Foto: <a href="{{url}}/{{registration.pasport}}" target="_blank">{{registration.pasport}}</a></li>
+            </ul>
+          <div class="card-footer">
+            <form action="/admin/panel/{{registration._id}}" method="POST" class="needs-validation" novalidate>
+              <div class="card-header"><center><h4>Statusni o'zgartirish</h4></center></div>
+              <div class="card-body">
+                <div class="form-group">
+                  <label for="country">Statusni o'zgartiring</label>
+                  <select class="form-control" id="yourStatus" name="yourStatus">
+                  <option value="No faol">No faol</option>
+                  <option value="Aktiv">Aktiv</option>
+                  </select>
+                  <input type="hidden" name="regId" value="{{registration._id}}">
+                </div>
+              <div class="card-footer"><center><button type="submit" class="btn btn-primary">O'zgartirish</button></center></div>
+            </form>
+          </div>
+        </div> 
+    </div>
+</div>

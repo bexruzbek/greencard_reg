@@ -1,0 +1,27 @@
+{
+  "name": "green_card",
+  "version": "1.0.0",
+  "description": "green card register form",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "author": "Bexruz Xolmuminov <bexruzxolmuminov@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "@handlebars/allow-prototype-access": "^1.0.3",
+    "bcryptjs": "^2.4.3",
+    "connect-mongodb-session": "^2.4.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.2.0",
+    "express-handlebars": "^5.1.0",
+    "express-session": "^1.17.1",
+    "mongoose": "^5.10.8"
+  },
+  "devDependencies": {
+    "handlebars": "^4.7.6",
+    "nodemon": "^2.0.4"
+  }
+}

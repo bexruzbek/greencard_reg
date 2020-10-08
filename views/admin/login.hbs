@@ -1,0 +1,44 @@
+<div class="row mt-2">
+    <div class="col-8 offset-2">
+        <div class="card">
+            <form action="/admin/login-to-admin" method="POST" class="needs-validation" novalidate>
+
+            <div class="card-header"><center><h2>LOGIN</h2></center></div>
+            <div class="card-body">
+                <div class="form-group">
+                    <label for="email">Email manzil:</label>
+                    <input type="email" class="form-control" name="email" placeholder="Emailni kiriting" id="email" required>
+                    <div class="invalid-feedback">Emailni kiriting</div>
+                </div>
+                <div class="form-group">
+                    <label for="password">Parol:</label>
+                    <input type="password" class="form-control" name="password" placeholder="Parolni kiriting" id="password" required>
+                    <div class="invalid-feedback">Parolni kiriting</div>
+                </div>
+            </div>
+            <div class="card-footer"><center><button type="submit" class="btn btn-primary">Kirish</button></center></div>
+            </form>
+        </div> 
+    </div>
+</div>
+
+<script>
+// Disable form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Get the forms we want to add validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+</script>

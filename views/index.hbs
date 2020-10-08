@@ -1,0 +1,220 @@
+<form action="/" method="POST" class="needs-validation" novalidate enctype="multipart/form-data">
+  <div class="register">
+    <div class="row">
+
+      <div class="col-md-3 register-left">
+        <img src="./img/logo-icon.png" alt="" />
+        <h3>GREEN CARD</h3>
+        <p>GREEN CARD DV-2022 LOTTOREYASIDA QATNASHISH UCHUN</p>
+        <input class="display-none" type="submit" name="" value="Login" /><br />
+      </div>
+      
+      <div class="col-md-9 register-right">
+        <ul class="nav nav-tabs nav-justified display-none" id="myTab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
+              aria-controls="home" aria-selected="true">Employee</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+              aria-controls="profile" aria-selected="false">Hirer</a>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+            <h3 class="register-heading">GREEN CARD - ANKETA TO'LDIRISH</h3>
+            <div class="row register-form">
+              <div class="col-md-6">
+                <div class="form-group">
+                    <label for="name">ISMINGIZ (pasportda ingliz tilida yozilgan)</label>
+                    <input required id="name" name="name" type="text" class="form-control" placeholder="Ismingizni kiriting" />
+                    <div class="invalid-feedback">Ismingizni kiriting</div>
+                </div>
+                <div class="form-group">
+                    <label for="surname">FAMILIYANGIZ (pasportda ingliz tilida yozilgan)</label>
+                    <input required id="surname" name="surname" type="text" class="form-control" placeholder="Familyangizni kiriting" />
+                    <div class="invalid-feedback">Familyangizni kiriting</div>
+                </div>
+                <div class="form-group">
+                    <label for="birthday">TUG'ILGAN KUNINGIZ (kun.oy.yil)</label>
+                    <input required id="birthday" name="birthday" type="date" class="form-control" placeholder="Tug'ilgan kuningizni kiriting" />
+                    <div class="invalid-feedback">Familyangizni kiriting</div>
+                </div>
+                <div class="form-group">
+                  <label for="address">YASHAYOTGAN MANZILINGIZ (viloyat, shahar, ko'cha, uy, xonadon)</label>
+                  <input required id="address" name="address" type="text" class="form-control" placeholder="Address"
+                       />
+                  <div class="invalid-feedback">Yashash joyingizni kiriting</div>
+                </div>
+                <div class="form-group">
+                  <label for="couple">ER, XOTIN (familiyasi, ismi, tug'ilgan sanasi va joyi)</label>
+                  <input id="couple" type="text" name="couple"
+                      class="form-control" placeholder="Agar bo'lsa..." />
+                </div>
+                <div class="form-group">
+                  <label for="childrenCount">FARZANDLARINGIZ SONI (21 yoshgacha bulgan)</label>
+                  <input id="childrenCount" type="number" name="childrenCount"
+                      class="form-control" placeholder="Agar bo'lsa"  />
+                </div>
+                <div class="form-group">
+                  <label for="children">FARZANDLARINGIZ (familiyasi, ismi, tug'ilgan sanasi va joyi)</label>
+                  <input id="children" type="text" class="form-control" placeholder="Agar bo'lsa"
+                    />
+                </div>
+                <div class="form-group">
+                  <div class="maxl">
+                    <label>JINSINGIZ</label>
+                    <label class="radio inline">
+                      <input type="radio" name="sex" value="Erkak" checked>
+                      <span> Erkak </span>
+                    </label>
+                    <label class="radio inline">
+                      <input type="radio" name="sex" value="Ayol">
+                      <span> Ayol </span>
+                    </label>
+                  </div>
+                </div>
+                <div class="form-group">
+                    <div class="maxl">
+                        <label>TUG'ILGAN DAVLATINGIZ</label>
+                        <label class="radio inline">
+                            <input type="radio" name="country" value="uzbekistan" checked>
+                            <span> O'zbekiston </span>
+                        </label>
+                        <label class="radio inline">
+                            <input type="radio" name="country" value="boshqasi">
+                            <span> boshqasi </span>
+                        </label>
+                    </div>
+                </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="email">EMAIL MANZILINGIZ (bo'lsa agar)</label>
+                    <input id="email" type="email" name="email" class="form-control" placeholder="Email"
+                         />
+                  </div>
+                  <div class="form-group">
+                    <label for="phone">TELEFON RAQAMINGIZ (Kodi bilan)</label>
+                    <input required id="phone"type="text" name="phone" class="form-control" placeholder="Telefon raqam"
+                      />
+                    <div class="invalid-feedback">Telefon raqamni kiriting</div>
+                  </div>
+                  <div class="form-group">
+                    <label>MA'LUMOTINGIZ</label>
+                    <select required class="form-control" name="education">
+                        <option class="hidden" selected disabled>Iltimos ma'lmotingizni tanlang
+                        </option>
+                        <option value="Tugallanmagan o`rta ta'lim (9 sinf)">Tugallanmagan o`rta ta'lim (9 sinf)</option>
+                        <option value="O`rta ta`lim (11 sinf)">O`rta ta`lim (11 sinf)</option>
+                        <option value="Tugallanmagan o`rta maxsus">Tugallanmagan o`rta maxsus</option>
+                        <option value="O`rta maxsus ta`lim (kollej, letsey)">O`rta maxsus ta`lim (kollej, letsey)</option>
+                        <option value="Oliy ma`lumot">Oliy ma`lumot</option>
+                        <option value="Magisgratura">Magisgratura</option>
+                        <option value="Asperantura">Asperantura</option>
+                        <option value="Doktorantura">Doktorantura</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="">OILAVIY HOLATINGIZ</label>
+                    <select required class="form-control" name="familystatus">
+                        <option class="hidden" selected disabled>Iltimos oilaviy holatingizni tanlasangiz
+                        </option>
+                        <option value="uylanmagan / turmushga chiqmagan">uylanmagan / turmushga chiqmagan</option>
+                        <option value="uylangan / turmushga chiqgan">uylangan / turmushga chiqgan</option>
+                        <option value="ajrashgan / ajrashuvda">ajrashgan / ajrashuvda</option>
+                        <option value="beva / yolg’iz">beva / yolg’iz</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                      <label><h5 class="my-txt">Fotosurat yuklashning qisqacha qoidalari:Yuklanayotgan fotosurat maksimal hajmi 10 MB dan oshmasligi lozim.Fotosurat kengligi minimum 600 x 600 piksel bo'lishi lozim.Fotosurat foni yorqin va ravshan bo'lishi lozim.Fotosurat to'g'ri ko'rinishi va hech qanday soya ko'rinmasligi lozim.</h5></label>
+                  </div>
+                  <div class="form-group">
+                      <label for="photo" ><h5 class="my-text-color">FOTOSURAT YUKLASH</h5></label>
+                      <input required id="photo" type="file" class="form-control" placeholder="Photo" name="photo"
+                           />
+                  </div>
+                  <div class="form-group">
+                    <label for=""><h5 class="my-txt">PASPORT (chet elga chiqish uchun kerak bulgan Qizil Passport) NUSXASINI YUKLASH</h5></label>
+                    <label for="pasport"><h5 class="my-text-color">YUKLASH</h5></label>
+                    <input required id="pasport" type="file" name="pasport" class="form-control" placeholder="Photo"
+                        value="" />
+                  </div>
+                  <input type="submit" class="btnRegister" value="Register" />
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade show" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <h3 class="register-heading">Apply as a Hirer</h3>
+                <div class="row register-form">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="First Name"  />
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Last Name"  />
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Email"  />
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control"
+                                placeholder="Phone"  />
+                        </div>
+
+
+                    </div>
+                          <div class="col-md-6">
+                              <div class="form-group">
+                                  <input type="password" class="form-control" placeholder="Password"
+                                       />
+                              </div>
+                              <div class="form-group">
+                                  <input type="password" class="form-control" placeholder="Confirm Password"
+                                       />
+                              </div>
+                              <div class="form-group">
+                                  <select class="form-control">
+                                      <option class="hidden" selected disabled>Please select your Sequrity
+                                          Question
+                                      </option>
+                                      <option>What is your Birthdate?</option>
+                                      <option>What is Your old Phone Number</option>
+                                      <option>What is your Pet Name?</option>
+                                  </select>
+                              </div>
+                              <div class="form-group">
+                                  <input type="text" class="form-control" placeholder="`Answer"  />
+                              </div>
+                              <input type="submit" class="btnRegister" value="Register" />
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+  </div>
+</form>
+
+
+<script>
+// Disable form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Get the forms we want to add validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+</script>

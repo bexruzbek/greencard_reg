@@ -1,0 +1,132 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+.my-card-container {
+    background-color: #f8f9fa;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: url('https://i.pinimg.com/originals/1b/55/e4/1b55e4bdb4fc6051382e370bf26d5a59.jpg') center center/cover; */
+    /* background: url('https://image.freepik.com/free-vector/abstract-blue-vector-background-with-triangles_56103-550.jpg') center center/cover; */
+    background: url('https://static.brusheezy.com/system/resources/previews/000/050/505/original/blue-abstract-bubble-background-photoshop-backgrounds.jpg') center center/cover;
+    /* background: url('https://image.shutterstock.com/image-photo/green-black-blur-texture-background-260nw-1046656939.jpg') center center/cover; */
+
+}
+
+.my-card-container .content {
+    /* background-color: #fff; */
+    background: url('./img//bg2.jpg') center center/cover;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.2); 
+    max-width: 400px;
+    box-shadow: 0 0 30px rgb(87, 87, 87);
+    width: 100%;
+    height: 450px;
+    padding: 20px 50px;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.my-card-container .content h1 {
+    width: 100%;
+    text-align: center;
+    color: rgb(4, 204, 4);
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+label {
+    font-weight: 800;
+    color: rgb(87, 87, 87);
+    text-align: center;
+    width: 100%;
+}
+
+input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    /* border-radius: 25px; */
+    border: none;
+    border-bottom: 1px solid #ccc;
+    margin: 25px 0;
+    outline: none;
+}
+
+
+
+input[type="submit"]:active {
+    opacity: 1;
+
+}
+
+form {
+    text-align: center;
+}
+
+h3 {
+    padding: 25px;
+}
+
+a {
+    color: none !important;
+}
+
+.telegram {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.telegram > div {
+    border-radius: 50%;
+    box-shadow: 0 0 10px #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    opacity: 0.9;
+}
+
+.telegram > div:hover {
+    opacity: 1;
+    color: #0076b1;
+}
+
+.telegram > div:active {
+    box-shadow: none;
+}
+
+.telegram i{
+    color: #0088cc !important;
+    font-size: 45px;
+    cursor: pointer;
+}
+
+.text {
+    font-size: medium;
+    color: rgb(55, 56, 55);
+    padding: 10px;
+}
+
+.blue{
+    color: blue;
+    font-weight: bolder;
+}
+
+@media only screen and (max-width: 425px) {
+    .my-card-container .content {
+        max-width: 90% !important;
+    }
+
+}
