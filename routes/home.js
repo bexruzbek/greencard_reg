@@ -1,7 +1,6 @@
 const path = require('path');
 const { Router } = require('express');
 const Registration = require('../models/Registration');
-const { findOne } = require('../models/Registration');
 const router = Router();
 
 // @desc      Page of greencard registration
@@ -33,7 +32,13 @@ router.post('/', async (req, res) => {
       familystatus,
       couple,
       childrenCount,
-      children
+      children,
+      birthplace,
+      passportSeria,
+      passportExpireDate,
+      passportCountryIssuence,
+      zipcode,
+      countryLive
     } = req.body;
 
     // Photo upload
@@ -84,6 +89,12 @@ router.post('/', async (req, res) => {
       couple,
       childrenCount,
       children,
+      birthplace,
+      passportSeria,
+      passportExpireDate,
+      passportCountryIssuence,
+      zipcode,
+      countryLive,
       photo: photo.name,
       pasport: pasport.name
     });
