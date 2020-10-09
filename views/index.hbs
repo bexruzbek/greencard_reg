@@ -41,6 +41,18 @@
                     <div class="invalid-feedback">Familyangizni kiriting</div>
                 </div>
                 <div class="form-group">
+                  <label for="birthplace">TUG'ILGAN JOYINGIZ (Davlat, viloyat, shahar)</label>
+                  <input required id="birthplace" name="birthplace" type="text" class="form-control" placeholder="Tug'ilgan joy"
+                       />
+                  <div class="invalid-feedback">Tug'ilgan joyingizni kiriting</div>
+                </div>
+                <div class="form-group">
+                  <label for="countryLive">XOZIRDA YASHAYOTGAN DAVLATINGIZ</label>
+                  <input required id="countryLive" name="countryLive" type="text" class="form-control" placeholder="Yashayotgan davlatingiz"
+                       />
+                  <div class="invalid-feedback">Ma'lumotni kiriting</div>
+                </div>
+                <div class="form-group">
                   <label for="address">YASHAYOTGAN MANZILINGIZ (viloyat, shahar, ko'cha, uy, xonadon)</label>
                   <input required id="address" name="address" type="text" class="form-control" placeholder="Address"
                        />
@@ -60,6 +72,11 @@
                   <label for="children">FARZANDLARINGIZ (familiyasi, ismi, tug'ilgan sanasi va joyi)</label>
                   <input id="children" type="text" class="form-control" placeholder="Agar bo'lsa"
                     />
+                </div>
+                <div class="form-group">
+                  <label for="zipcode">POCHTANGIZ RAQAMI</label>
+                  <input required id="zipcode" type="number"
+                      name="zipcode" class="form-control" placeholder="Zip Code" value="" />
                 </div>
                 <div class="form-group">
                   <div class="maxl">
@@ -100,6 +117,21 @@
                       />
                     <div class="invalid-feedback">Telefon raqamni kiriting</div>
                   </div>
+                   <div class="form-group">
+                      <label for="passportSeria">PASPORT SERIA RAQAMI</label>
+                      <input required id="passportSeria" type="text" name="passportSeria" class="form-control"
+                          placeholder="Passport Number" value="" />
+                    </div>
+                    <div class="form-group">
+                      <label for="passportCountryIssuence">PASPORT BERGAN DAVLAT</label>
+                      <input required id="passportCountryIssuence" type="text" name="passportCountryIssuence" class="form-control"
+                          placeholder="Passport Bergan davlat" value="" />
+                    </div>
+                    <div class="form-group">
+                      <label for="passportExpireDate">PASPORT TUGASH MUDDATI (kun, oy, yil)</label>
+                      <input required id="passportExpireDate" type="date" name="passportExpireDate" class="form-control"
+                          placeholder="Passport Expivesion Day" value="" />
+                    </div>
                   <div class="form-group">
                     <label>MA'LUMOTINGIZ</label>
                     <select required class="form-control" name="education">
@@ -127,7 +159,10 @@
                     </select>
                   </div>
                   <div class="form-group">
-                      <label><h5 class="my-txt">Fotosurat yuklashning qisqacha qoidalari:Yuklanayotgan fotosurat maksimal hajmi 10 MB dan oshmasligi lozim.Fotosurat kengligi minimum 600 x 600 piksel bo'lishi lozim.Fotosurat foni yorqin va ravshan bo'lishi lozim.Fotosurat to'g'ri ko'rinishi va hech qanday soya ko'rinmasligi lozim.</h5></label>
+                      <label><h5 class="my-txt">Fotosurat yuklashning qisqacha qoidalari:Yuklanayotgan fotosurat maksimal hajmi 10 MB dan oshmasligi lozim.Fotosurat kengligi minimum 600 x 600 maksimum 1200 x 1200 piksel bo'lishi va kvadrat shaklida bo'lishi lozim.Fotosurat foni yorqin va ravshan bo'lishi lozim.Fotosurat to'g'ri ko'rinishi va hech qanday soya ko'rinmasligi lozim.</h5></label>
+                  </div>
+                  <div class="form-group">
+                      <label><img src="/img/photologo.png" class="img-fluid" alt="Responsive image"></label>
                   </div>
                   <div class="form-group">
                       <label for="photo" ><h5 class="my-text-color">FOTOSURAT YUKLASH</h5></label>
