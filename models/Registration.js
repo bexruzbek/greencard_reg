@@ -13,6 +13,10 @@ const RegistrationSchema = new mongoose.Schema({
     type: String,
     required: true
   },
+  birthplace: {
+    type: String,
+    required: true
+  },
   sex: {
     type: String,
     required: true
@@ -48,6 +52,25 @@ const RegistrationSchema = new mongoose.Schema({
   },
   children: {
     type: String
+  },
+  passportSeria: {
+    type: String,
+    required: true
+  },
+  passportExpireDate:{
+    type: String,
+    required: true
+  },
+  passportCountryIssuence: {
+    type: String
+  },
+  zipcode: {
+    type: Number,
+    required: true
+  },
+  countryLive: {
+    type: String,
+    required: true,
   },
   photo: {
     type: String,
